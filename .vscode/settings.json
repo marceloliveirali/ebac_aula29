@@ -1,0 +1,38 @@
+{
+  // Define o Prettier como o formatador padrão para todos os arquivos
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // Ativa a formatação automática ao salvar (Ctrl + S)
+  "editor.formatOnSave": true,
+
+  // Configurações específicas para linguagens de programação
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Faz o ESLint rodar correções automáticas (como remover variáveis não usadas) ao salvar
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // Garante que o ESLint valide os novos formatos de arquivo
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // Melhora a visualização no Linux (opcional, mas ajuda na leitura do código)
+  "editor.guides.bracketPairs": true,
+  "editor.suggestSelection": "first"
+}
